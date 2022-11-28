@@ -1,0 +1,9 @@
+.deals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FFC220;    
+}
+
+

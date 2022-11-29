@@ -1,20 +1,113 @@
+
 .navbar {
     display: flex;
     height: 100%;
     width: 100%;    
     background-color: #0071dc;
     align-items: center;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 .navbar__image {
     padding: 0 10px ;
-    height: 62px;
+    height: 35px;
     object-fit: contain;
-    width: 250px;
-    aspect-ratio: auto 130 / 32;
-
-    background-color: white;
+    width: 150px;
 }
+.input_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.input_search > input {
+    width: 600px;
+    padding: auto;
+    border-radius: 30px;
+    padding: 12px 20px;
+    display: flex;
+}
+.search_icon{
+    background-color: #ffc220;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:5px;
+    right: 8px;
+}
+
 span {
     color:white;
+}
+.icons {
+    margin: 0 10px;
+}
+
+.order , .login {
+    margin: 10px;
+    border-radius: 30px;
+    padding: 0 16px;
+    position: relative;
+    width: 80px;
+}
+.order:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+ h3 {
+    color:white;
+}
+.heart_icon, .user_icon{
+    position: absolute;
+    left:0px;
+    color:white;
+    top:20px;
+}
+.cart {
+    height: 60px;
+    width: 50px;
+    gap:15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart h4 {
+    color:white;
+}
+
+.cart_total{
+    position: absolute;
+    top:0;
+    right: 10px;
+    color: black;
+    width: 15px;
+    height: 15px;
+}
+.total {
+    position: absolute;
+    bottom:5px;
+    left:10px;
+    background-color: #ffc220;
+    border-radius: 50%;
+    width: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.login {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    padding: 0 16px;
+    width: 80px;
+    margin:0;
+    height: 70px;
+    position: relative;
 }

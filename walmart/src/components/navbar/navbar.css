@@ -22,7 +22,7 @@
 }
 .input_search > input {
     width: 600px;
-    padding: auto;
+    padding: 15px;
     border-radius: 30px;
     padding: 12px 20px;
     display: flex;

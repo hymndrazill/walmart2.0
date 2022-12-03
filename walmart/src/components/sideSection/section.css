@@ -1,14 +1,36 @@
 .section_container {
     display: flex;
-    flex-direction: column;
-   flex:1;
-   background-color: red;
+    flex:2;
 }
 
 .section_img {
-    height: 450px;
-    width:400px;
-    border-radius: 50%;
-
+    position: relative;
     object-fit: cover;
+    width: 450px;
+    height: 350px;
+    padding: 0 25px;
+    border-radius: 10%;
+
+}
+.section_details {
+    margin: 10px 25px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 30px;
+}
+.section_details > p {
+    color: rgb(8, 5, 5);
+    font-size: 22px;
+    font-weight: 400;
+}
+.section_details> h3 {
+    color:black;
+    font-weight: 600;
+}
+.section_details > span {
+    font-size: 18px;
+    color: black;
+    text-decoration: underline;
 }

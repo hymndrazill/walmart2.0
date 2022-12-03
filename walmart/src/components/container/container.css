@@ -1,6 +1,9 @@
 .container {
+    padding: 30px 40px;
     align-items: center;
-    justify-content: center;
-    margin: 0 40px;
+    justify-content: space-around;
+    margin: 10px 40px;
     display: flex;
+    gap:40px;
+    background-color: white;
 }

@@ -11,6 +11,37 @@ header {
     gap: 10px;
     align-items: center;
     justify-content: center;
+    position: relative;
+   
+}
+.shippement {
+    position: absolute;
+    z-index: 999; 
+    height:355px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0071dc;
+    top:245px;
+    left:5px;
+    border-radius: 10px;
+    
+}
+.shippement_method {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.shippement_img{
+    border-radius: 50%;
+    background-color: rgb(160, 227, 236);
+    display: flex;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
 }
 .ship_img{
     height: 30px;

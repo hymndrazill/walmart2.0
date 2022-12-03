@@ -1,5 +1,4 @@
 import "./section.css"
-
 const Section = () => {
   return (
     <div className="section_container">

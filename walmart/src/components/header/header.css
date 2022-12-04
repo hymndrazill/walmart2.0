@@ -17,14 +17,14 @@ header {
 .shippement {
     position: absolute;
     z-index: 999; 
-    height:355px;
-    width: 350px;
+    height:410px;
+    width: 349px;
     display: flex;
     flex-direction: column;
     background-color: #0071dc;
     top:245px;
-    left:5px;
-    border-radius: 10px;
+    left:8px;
+    border-radius: 0 0 10px 10px;
     
 }
 .shippement_method {
@@ -33,6 +33,12 @@ header {
     align-items: center;
     justify-content: center;
     gap: 25px;
+}
+.ship {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .shippement_img{
     border-radius: 50%;
@@ -47,6 +53,82 @@ header {
     height: 30px;
     width: 30px;
     border-radius: 50%;
+}
+.ship > p {
+    color:white;
+    font-weight: 400;
+}
+.shippement_address {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 16px;
+    margin: 15px 15px;
+    border-radius: 15px;
+    gap: 5px;
+   
+}
+.shippement_address > span {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: black;
+}
+.shippement_details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.shippement_details > p {
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.shippement_details > button {
+    width: 100%;
+    font-size: 16px;
+    background-color: #0071dc;
+    color:white;
+    border:none;
+    border-radius: 25px;
+    padding: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.address_options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.address_options > span {
+    font-size: 12px;
+    color: black;
+}
+
+.pickup_address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 12px;
+}
+.pickup_options {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 16px;
+    margin:  15px;
+    border-radius: 15px;
+}
+
+.pickup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.pickup > p {
+    font-size: 14px;
 }
 
 .right > ul{

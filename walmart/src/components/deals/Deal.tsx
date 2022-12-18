@@ -1,9 +1,11 @@
+import { deal } from "../../pages/cart/Cart"
 import "./deal.css"
 
-const Deal = () => {
+const Deal = ({deal}:deal) => {
   return (
     <div className="deals">
-      <h4> Cyber Deals are here! Save on can't-miss finds.</h4>
+
+      <h4> {deal}</h4>
       {/* Link here */}
         <p>Shop Deals</p>
     </div>

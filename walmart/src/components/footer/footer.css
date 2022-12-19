@@ -1,14 +1,17 @@
 .footer {
     display: flex;
-    margin-top: 180px;
-    border-top: 3px solid rgb(201, 200, 200) ;
+    margin-top: 60px;
+    border-top: 2px solid rgb(201, 200, 200) ;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content:center;
+    max-width: 1400px;
+    flex-wrap: wrap;
+
 }   
 
 .left_footer {
-    flex:2; 
+    margin-left: 15px;
+    flex:1; 
     
 }
 .left_footer> span {
@@ -19,16 +22,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .right_footer {
-    flex: 8;
-    
+    flex:3;
+    gap: 5px;
 
 }
 .lists {
     align-items: center;
     justify-content: space-between;
     display: flex;
-    width: 100%;
-    gap: 5px;
 }
 .list_item {
     list-style: none;

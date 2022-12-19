@@ -1,0 +1,27 @@
+.cart__text {
+    margin-top: 7rem;
+    margin-left: 14rem;
+}
+
+.items {
+    margin-left:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.items > button {
+    padding: 15px 65px;
+    margin: 0 0 16px;
+    border-radius: 15px;
+    border: none;
+    background-color: #0071dc;
+    color:#fff;
+    font-weight: 700;
+}
+.departments {
+    display: flex; 
+    justify-content: space-around;
+    gap: 15px;
+}

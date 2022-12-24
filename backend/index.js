@@ -7,6 +7,11 @@ app.use(express.json());
 dotenv.config()
 
 
+// Middle to keep track of the request path and method
+app.use((req,res,next)=>{
+    console.log(req.path, req.method);
+    next();
+})
 
 
 app.get('/', (req,res)=>{

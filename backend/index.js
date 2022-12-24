@@ -8,10 +8,10 @@ app.use(express.json());
 dotenv.config()
 
 // connection to the db 
-const connect = async ()=> {
+const connect =  ()=> {
     mongoose.set('strictQuery',false);
     try {
-        await mongoose.connect(process.env.MONGO_URL);
+         mongoose.connect(process.env.MONGO_URL);
         console.log("no problemo");
       } catch (error) {
         handleError(error);

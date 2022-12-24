@@ -1,10 +1,22 @@
 import express from "express";
 import dotenv from "dotenv"
+import mongoose from 'mongoose';
 
 
 const app = express();
 app.use(express.json());
 dotenv.config()
+
+// connection to the db 
+const connect = async ()=> {
+    mongoose.set('strictQuery',false);
+    try {
+        await mongoose.connect(process.env.MONGO_URL);
+        console.log("no problemo");
+      } catch (error) {
+        handleError(error);
+      }
+}
 
 
 // Middle to keep track of the request path and method
@@ -20,5 +32,6 @@ app.get('/', (req,res)=>{
 
 
 app.listen(process.env.PORT,()=>{
+    connect();
     console.log(`backend is running on port ${process.env.PORT}`);
 })

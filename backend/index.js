@@ -1,9 +1,19 @@
-import express from "express"
+import express from "express";
+import dotenv from "dotenv"
+
 
 const app = express();
+app.use(express.json());
+dotenv.config()
 
-const PORT = 8800 || null
 
-app.listen(PORT,()=>{
-    console.log(`backend is running on port ${PORT}`);
+
+
+app.get('/', (req,res)=>{
+    res.send("You're in the Root route.")
+})
+
+
+app.listen(process.env.PORT,()=>{
+    console.log(`backend is running on port ${process.env.PORT}`);
 })
